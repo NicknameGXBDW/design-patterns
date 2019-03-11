@@ -1,0 +1,8 @@
+<?php
+
+use Dbdatabase;
+
+$db = new Dbdatabase\Mysql();
+$db->connect('192.168.0.169','test','123456','test');
+$res = $db->query("show tables");
+var_dump($res);
